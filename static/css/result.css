@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.hand {
+    display: inline-block;
+    color: rgb(182, 0, 0);
+    font-size: 20px;
+}
+
+.fingering {
+    display: inline-block;
+}

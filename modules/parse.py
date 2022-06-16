@@ -1,5 +1,7 @@
 import music21 as m21
 import numpy as np
+import matplotlib; matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 class Note:
     @staticmethod
@@ -24,6 +26,8 @@ class Note:
 
 def midi2notes(path):
     song = m21.converter.parse(path)
+    song.plot()
+    plt.savefig('static/tmp/tmp.png')
     notes = []
 
     for part in song[:2]: # 全トラック

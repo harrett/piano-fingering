@@ -10,7 +10,7 @@ params = {
     "n_choices": 5,
 }
 
-def midi2fingering(path):
+def flow(path):
     notes = midi2notes(path)
     fingering = notes2fingering(notes, **params)
     return fingering

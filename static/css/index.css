@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    background-image: url("../images/piano.png");
+}
+
+h1 {
+    font-family: "ヒラギノ明朝 ProN";
+    font-size: 6em;
+}
+
+#description {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    font-size: larger;
+
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-top: 1em;
+    background-color: rgb(245, 173, 118);
+    border-radius: 30px;
+}

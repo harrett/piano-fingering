@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
     <title>ピアノ運指提案</title>
 </head>
 <body>
     <h1>ピアノ運指提案</h1>
+    <p id="description">midiファイルを選択してください</p>
     <form action="/result" method="post" id="input" enctype="multipart/form-data">
-        <input type="file" id="file" name="midifile">
-        <button type="submit">実行</button>
-    </form>
+        <input type="file" id="file" name="midifile"><br>
+        <button type="submit">運指を生成</button>
     </form>
 </body>
 </html>
