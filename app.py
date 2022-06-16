@@ -14,7 +14,8 @@ def result():
     midi = request.files['midifile']
     midi.save(tmp_path)
     fingering = midi2fingering(tmp_path)
-    fing_r, fing_l = fingering
+    fing_r = fingering[0]
+    fing_l = 6 - fingering[1]
     return render_template('result.html', fing_r=fing_r, fing_l=fing_l)
 
 if __name__ == '__main__':
